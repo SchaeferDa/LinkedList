@@ -12,7 +12,7 @@ LinkedList Java-Education-Project
 
 ### Sorted List
 
-* add objects to the sorted list; the new object will be automatic inserted at the right position thought the sort-
+* add objects to the sorted list; the new object will be automatic inserted at the right position thought the sort-algorithm
 * get objects at specific index of the list
 * delete objects at specific index of the list
 
