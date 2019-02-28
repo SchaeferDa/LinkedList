@@ -47,4 +47,6 @@ get(int index)
 ```java
 delete(int index)
 ```
+
+***
 **An example of implementation with sorting in the 'ListExample.java' file!**
