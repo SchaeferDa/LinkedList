@@ -133,6 +133,47 @@ public class LinkedList
         if(sortedList) sortList();
     }
 
+    /**
+     * deletes data at given index
+     * @param index
+     * @return true if successful deleted
+     */
+    public boolean delete(int index)
+    {
+        if ((index > size - 1) || (index < 0))
+        {
+            return false;
+        }
+
+        ListItem searchedItem = firstListItem;
+
+        int i = 0;
+        while (i < index)
+        {
+            searchedItem = searchedItem.nextListItem;
+            i++;
+        }
+
+        if(index == 0)
+        {
+            searchedItem.nextListItem.prevListItem = null;
+            firstListItem = searchedItem.nextListItem;
+        }
+        else if(index == (size-1))
+        {
+            searchedItem.prevListItem.nextListItem = null;
+            lastListItem = searchedItem.prevListItem;
+        }
+        else
+        {
+            searchedItem.nextListItem.prevListItem = searchedItem.prevListItem;
+            searchedItem.prevListItem.nextListItem = searchedItem.nextListItem;
+        }
+
+        size--;
+        return true;
+    }
+
     private void sortList()
     {
         ListItem sortItem = firstListItem;
