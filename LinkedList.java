@@ -174,6 +174,16 @@ public class LinkedList
         return true;
     }
 
+    public boolean contains(Object searchObject)
+    {
+        for(int i = 0; i < size; i++)
+        {
+            if(get(i) == searchObject) return true;
+        }
+
+        return false;
+    }
+
     private void sortList()
     {
         ListItem sortItem = firstListItem;
