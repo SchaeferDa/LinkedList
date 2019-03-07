@@ -9,12 +9,14 @@ LinkedList Java-Education-Project
 * insert objects at specific index of the list
 * get objects at specific index of the list
 * delete objects at specific index of the list
+* check if the list contains an given object
 
 ### Sorted List
 
 * add objects to the sorted list; the new object will be automatic inserted at the right position thought the sort-algorithm
 * get objects at specific index of the list
 * delete objects at specific index of the list
+* check if the list contains an given object
 
 ## Usage
 
@@ -38,7 +40,7 @@ add(Object object)
 insert(Object object, int position)
 ```
 
-### get list object
+### get list object *returns Object*
 ```java
 get(int index)
 ```
@@ -46,6 +48,11 @@ get(int index)
 ### delete list object
 ```java
 delete(int index)
+```
+
+### check for list object *returns Boolean*
+```java
+contains(Object searchObject)
 ```
 
 ***
